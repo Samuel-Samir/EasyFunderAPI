@@ -15,33 +15,32 @@ r.db("easy_funder").tableCreate("next_donation")
 r.db("easy_funder").tableCreate("time_now")
 
 
-//insert in table user_info
-r.db("easy_funder").table("user_info").insert({'id':'0' , 'first_name':'samuel' , 'second_name':'samir' , 'email':'samuel@gmail.com' , 'phone_number':'012000000' , 
- 'Password':'123' , 'verification_code':'123' , 'verification_bool':'false' , 'has_bank_account':'true' , 'has_spending_categories':'true' , 'has_charities_to_donation':'true'})
+//insert in table user_info**
+r.db("easy_funder").table("user_info").insert({'id':'0','first_name':'samuel','second_name':'samir','email':'samuel@gmail.com' , 'phone_number':'012000000' ,  'Password':'123' , 'verification_code':'123' , 'verification_bool':false , 'has_bank_account':false , 'has_spending_categories':false , 'has_charities_to_donation':false})
 
 //insert in table bank_info
 r.db("easy_funder").table("bank_info").insert({'id':'0' , 'user_id':'0' , 'bank_name':'xyz' , 'account_number':'123xyz' , 'branch':'xxxx' , 'swift_code':'0000' , 'address':'egypt'})
 
-//insert in table charity_info
-r.db("easy_funder").table("charity_info").insert({ 'id':'0' , 'name':'united Mitochondrial Disease Foundation' , 'description':'xyz' , 'rate':'4' , 'country':'PA' , 'address':'Pittsburgh' , 'total_revenue':'' , 'programs_expenses':'1000' , 'fundraising_expenses':'100' , 'total_functional_expenses':'100' , 'category_name':'Health'})
+//insert in table charity_info**
+r.db("easy_funder").table("charity_info").insert({ 'id':'0' , 'name':'united Mitochondrial Disease Foundation' , 'description':'xyz' , 'rate':'4' , 'country':'PA'  , 'total_revenue':'1000$' , 'programs_expenses':'1000$' , 'fundraising_expenses':'100$' , 'total_functional_expenses':'100$' , 'category_name':'Health'})
 
-//insert in table user_spending_categories
-r.db("easy_funder").table("user_spending_categories").insert({ 'id':'0' , 'user_id':'0' , 'spending_category_name':'Health' , 'donation_Percentage':'5'})
+//insert in table user_spending_categories**
+r.db("easy_funder").table("user_spending_categories").insert({ 'id':'0' , 'user_id':'0' , 'spending_category_name':'Health' , 'donation_Percentage':1.5})
 
-//insert in table user_donation_charity
-r.db("easy_funder").table("user_donation_charity").insert({ 'id':'0' , 'user_id':'0' , 'charity_id':'0' , 'charitySpendingMoney':'5'})
+//insert in table user_donation_charity**
+r.db("easy_funder").table("user_donation_charity").insert({ 'id':'0' , 'user_id':'0' , 'charity_id':'0' })
 
-//insert in table donation_history
-r.db("easy_funder").table("donation_history").insert({ 'id':'0' , 'user_id':'0' , 'list_donation_charities':['united Mitochondrial Disease Foundation'] , 'spending_categories':['Health'] , 'amount_of_money_from_each_category':['20'] , 'total_donation':'20' , 'time_of_donation':'xyz' , 'is_read':'false'  })
+//insert in table donation_history**
+r.db("easy_funder").table("donation_history").insert({ 'id':'0' , 'user_id':'0' , 'list_donation_charities':['united Mitochondrial Disease Foundation'] , 'spending_categories':['Health'] , 'amount_of_money_from_each_category':[20.0] , 'total_donation':'200.0$' , 'month_of_donation':'02','year_of_donation':'2010' , 'is_read':'false'  })
 
 //insert in table charities_category
 r.db("easy_funder").table("charities_category").insert({ 'id':'0' , 'category_name':'ccc' , 'Number of charities':'1' })
 
-//insert in table category_paging
-r.db("easy_funder").table("category_paging").insert({ 'id':'0' , 'charity_id':'0' , 'charity_name':'united Mitochondrial Disease Foundation' , 'page_number':'1' , 'category_name':'xyz'  })
+//insert in table category_paging**
+r.db("easy_funder").table("category_paging").insert({ 'id':'0' , 'charity_id':['0'] , 'charity_name':['united Mitochondrial Disease Foundation'] , 'page_number':'1' , 'category_name':'xyz'  })
 
-//insert in table next_donation
-r.db("easy_funder").table("next_donation").insert({'id':'0' , 'user_id':'0' ,'next_donation':'scscscs'})
+//insert in table next_donation**
+r.db("easy_funder").table("next_donation").insert({'id':'0' , 'user_id':'0' ,'next_donation':'01/02/2016' })
 
 //insert in table time_now
 r.db("easy_funder").table("time_now").insert({ 'day':'1' , 'month':'10' , 'year':'2016' , 'seconds':'20' , 'minutes':'50' , 'hours':'10' })
@@ -53,7 +52,7 @@ r.db("easy_funder").table("user_info").indexCreate('email')
 
 //create secondry index in table bank_info
 r.db("easy_funder").table("bank_info").indexCreate('user_id')
-r.db("easy_funder").table("bank_info").indexCreate('Bank_acc' , [r.row('bank_name'),r.row('account_number')])
+r.db("easy_funder").table("bank_info").indexCreate('Bank_account' , [r.row('bank_name'),r.row('account_number')])**
 
 //create secondry index in table charity_info
 r.db("easy_funder").table("charity_info").indexCreate('category_name')

@@ -7,8 +7,8 @@
 -debug:full
 -nostdlib
 -nologo
-"E:\WorkSpaces\MyGitProjects\EasyFunderAPI\src\EasyFunder\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
--out:"E:\WorkSpaces\MyGitProjects\EasyFunderAPI\src\EasyFunder\bin\Debug\netcoreapp1.0\EasyFunder.dll"
+"E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
+-out:"E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\bin\Debug\netcoreapp1.0\EasyFunder.dll"
 -r:"C:\Users\samuel\.nuget\packages\Microsoft.ApplicationInsights\2.1.0\lib\dotnet5.4\Microsoft.ApplicationInsights.dll"
 -r:"C:\Users\samuel\.nuget\packages\Microsoft.ApplicationInsights.AspNetCore\1.0.0\lib\netstandard1.6\Microsoft.ApplicationInsights.AspNetCore.dll"
 -r:"C:\Users\samuel\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Antiforgery.dll"
@@ -170,7 +170,17 @@
 -r:"C:\Users\samuel\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll"
 -r:"C:\Users\samuel\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\samuel\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
--resource:"E:\WorkSpaces\MyGitProjects\EasyFunderAPI\src\EasyFunder\obj\Debug\netcoreapp1.0\EasyFunderdotnet-compile.deps.json",EasyFunder.deps.json
-"E:\WorkSpaces\MyGitProjects\EasyFunderAPI\src\EasyFunder\Program.cs"
-"E:\WorkSpaces\MyGitProjects\EasyFunderAPI\src\EasyFunder\Startup.cs"
-"E:\WorkSpaces\MyGitProjects\EasyFunderAPI\src\EasyFunder\Controllers\ValuesController.cs"
+-resource:"E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\obj\Debug\netcoreapp1.0\EasyFunderdotnet-compile.deps.json",EasyFunder.deps.json
+"E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Program.cs"
+"E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Startup.cs"
+"E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Controllers\ValuesController.cs"
+"E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\BankInfo.cs"
+"E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\CategoryPaging.cs"
+"E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\CharitiesCategory.cs"
+"E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\CharityInfo.cs"
+"E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\DonationHistory.cs"
+"E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\NextDonation.cs"
+"E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\TimeNow.cs"
+"E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\UserDonationCharity.cs"
+"E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\UserInfo.cs"
+"E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\UserSpendingCategories.cs"

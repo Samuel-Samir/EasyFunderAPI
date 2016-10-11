@@ -1,5 +1,5 @@
---temp-output:E:\WorkSpaces\MyGitProjects\EasyFunderAPI\src\EasyFunder\obj\Debug\netcoreapp1.0\
---out:E:\WorkSpaces\MyGitProjects\EasyFunderAPI\src\EasyFunder\bin\Debug\netcoreapp1.0\EasyFunder.dll
+--temp-output:E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\obj\Debug\netcoreapp1.0\
+--out:E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\bin\Debug\netcoreapp1.0\EasyFunder.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -174,7 +174,17 @@
 --reference:C:\Users\samuel\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\samuel\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\samuel\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"E:\WorkSpaces\MyGitProjects\EasyFunderAPI\src\EasyFunder\obj\Debug\netcoreapp1.0\EasyFunderdotnet-compile.deps.json",EasyFunder.deps.json
-E:\WorkSpaces\MyGitProjects\EasyFunderAPI\src\EasyFunder\Program.cs
-E:\WorkSpaces\MyGitProjects\EasyFunderAPI\src\EasyFunder\Startup.cs
-E:\WorkSpaces\MyGitProjects\EasyFunderAPI\src\EasyFunder\Controllers\ValuesController.cs
+--resource:"E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\obj\Debug\netcoreapp1.0\EasyFunderdotnet-compile.deps.json",EasyFunder.deps.json
+E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Program.cs
+E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Startup.cs
+E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Controllers\ValuesController.cs
+E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\BankInfo.cs
+E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\CategoryPaging.cs
+E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\CharitiesCategory.cs
+E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\CharityInfo.cs
+E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\DonationHistory.cs
+E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\NextDonation.cs
+E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\TimeNow.cs
+E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\UserDonationCharity.cs
+E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\UserInfo.cs
+E:\WorkSpaces\C #\EasyFunder\src\EasyFunder\Models\DataBaseTables\UserSpendingCategories.cs
