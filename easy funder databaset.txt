@@ -1,0 +1,82 @@
+//create database
+r.dbCreate("easy_funder")
+
+
+//create tables
+r.db("easy_funder").tableCreate("user_info")
+r.db("easy_funder").tableCreate("bank_info")
+r.db("easy_funder").tableCreate("charity_info")
+r.db("easy_funder").tableCreate("user_spending_categories")
+r.db("easy_funder").tableCreate("user_donation_charity")
+r.db("easy_funder").tableCreate("donation_history")
+r.db("easy_funder").tableCreate("charities_category")
+r.db("easy_funder").tableCreate("category_paging")
+r.db("easy_funder").tableCreate("next_donation")
+r.db("easy_funder").tableCreate("time_now")
+
+
+//insert in table user_info
+r.db("easy_funder").table("user_info").insert({'id':'0' , 'first_name':'samuel' , 'second_name':'samir' , 'email':'samuel@gmail.com' , 'phone_number':'012000000' , 
+ 'Password':'123' , 'verification_code':'123' , 'verification_bool':'false' , 'has_bank_account':'true' , 'has_spending_categories':'true' , 'has_charities_to_donation':'true'})
+
+//insert in table bank_info
+r.db("easy_funder").table("bank_info").insert({'id':'0' , 'user_id':'0' , 'bank_name':'xyz' , 'account_number':'123xyz' , 'branch':'xxxx' , 'swift_code':'0000' , 'address':'egypt'})
+
+//insert in table charity_info
+r.db("easy_funder").table("charity_info").insert({ 'id':'0' , 'name':'united Mitochondrial Disease Foundation' , 'description':'xyz' , 'rate':'4' , 'country':'PA' , 'address':'Pittsburgh' , 'total_revenue':'' , 'programs_expenses':'1000' , 'fundraising_expenses':'100' , 'total_functional_expenses':'100' , 'category_name':'Health'})
+
+//insert in table user_spending_categories
+r.db("easy_funder").table("user_spending_categories").insert({ 'id':'0' , 'user_id':'0' , 'spending_category_name':'Health' , 'donation_Percentage':'5'})
+
+//insert in table user_donation_charity
+r.db("easy_funder").table("user_donation_charity").insert({ 'id':'0' , 'user_id':'0' , 'charity_id':'0' , 'charitySpendingMoney':'5'})
+
+//insert in table donation_history
+r.db("easy_funder").table("donation_history").insert({ 'id':'0' , 'user_id':'0' , 'list_donation_charities':['united Mitochondrial Disease Foundation'] , 'spending_categories':['Health'] , 'amount_of_money_from_each_category':['20'] , 'total_donation':'20' , 'time_of_donation':'xyz' , 'is_read':'false'  })
+
+//insert in table charities_category
+r.db("easy_funder").table("charities_category").insert({ 'id':'0' , 'category_name':'ccc' , 'Number of charities':'1' })
+
+//insert in table category_paging
+r.db("easy_funder").table("category_paging").insert({ 'id':'0' , 'charity_id':'0' , 'charity_name':'united Mitochondrial Disease Foundation' , 'page_number':'1' , 'category_name':'xyz'  })
+
+//insert in table next_donation
+r.db("easy_funder").table("next_donation").insert({'id':'0' , 'user_id':'0' ,'next_donation':'scscscs'})
+
+//insert in table time_now
+r.db("easy_funder").table("time_now").insert({ 'day':'1' , 'month':'10' , 'year':'2016' , 'seconds':'20' , 'minutes':'50' , 'hours':'10' })
+
+// indexing 
+
+//create secondry index in table user_info
+r.db("easy_funder").table("user_info").indexCreate('email')
+
+//create secondry index in table bank_info
+r.db("easy_funder").table("bank_info").indexCreate('user_id')
+r.db("easy_funder").table("bank_info").indexCreate('Bank_acc' , [r.row('bank_name'),r.row('account_number')])
+
+//create secondry index in table charity_info
+r.db("easy_funder").table("charity_info").indexCreate('category_name')
+
+//create secondry index in table user_spending_categories
+r.db("easy_funder").table("user_spending_categories").indexCreate('user_id')
+r.db("easy_funder").table("user_spending_categories").indexCreate('spending_category_name')
+
+//create secondry index in table user_donation_charity
+r.db("easy_funder").table("user_donation_charity").indexCreate('donation_charity' , [r.row('user_id'),r.row('charity_id')])
+
+//create secondry index in table donation_history
+r.db("easy_funder").table("donation_history").indexCreate('user_id')
+
+//create secondry index in table charities_category
+r.db("easy_funder").table("charities_category").indexCreate('category_name')
+
+//create secondry index in table category_paging
+r.db("easy_funder").table("category_paging").indexCreate('categoryPaging' , [r.row('charity_name'),r.row('page_number')])
+
+//create secondry index in table next_donation
+r.db("easy_funder").table("next_donation").indexCreate('user_id')
+
+
+
+
